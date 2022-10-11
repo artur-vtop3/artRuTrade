@@ -6,6 +6,587 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title New Project
     link(rel='stylesheet' href='./assets/css/main.css')
-  body 
-    h1 Get started!
+  body.font-mont.text-text
+    header.header
+      img.header-burger(src="./assets/img/icons/burger.svg" alt="" )
+
+      a.header-logo(href="" ) 
+        img.header-logo-img(src="./assets/img/logo.svg" alt="" )
+      nav.header-nav
+        ul.header-menu
+          li
+            a(href="")  О нас
+          li
+            a(href="")  Услуги и цены
+          li
+            a(href="")  Отзывы
+          li
+            a(href="")  Специалисты
+          li
+            a(href="")  Расчитать стоимость
+      .header-links
+        a.header-links-social(href="")
+          img(src="./assets/img/social/telegram.svg" alt="")
+        a.header-links-social(href="" )
+          img(src="./assets/img/social/viber.svg" alt="")
+        a.header-links-phone(href="" )
+          img(src="./assets/img/social/phone.svg" alt="")
+        span.header-phone Показать номер  
+    main
+      section#slider
+        .slider-wrap
+          h1.slider-title Профессиональная уборка и гарантия уюта и чистоты 
+          .slider-buttons
+            button.slider-button Оставить заявку
+            button.slider-button-outline Расчитать стоимость
+
+          img.slider-image(src="./assets/img/bg-text.svg" alt="" class="")
+          img.slider-image-mobile(src="./assets/img/bgsm-text.svg" alt="" class="")
+
+
+      section#about
+        h2.section-title О нас
+        .about-wrap
+          .about-item
+            p.about-item-title 15 <span class="text-4xl">лет</span>
+            p.about-item-desc опыт работы
+          .about-item
+            p.about-item-title 50
+            p.about-item-desc сотрудников
+          .about-item
+            p.about-item-title +1000
+            p.about-item-desc довольных клиентов
+          .about-item
+            p.about-item-title > 90%
+            p.about-item-desc постоянные клиенты
+
+
+      section#features
+        h2.section-title Наши преимущества
+        .features-wrap
+          .features-item
+            .features-item-wrap
+              img(src="./assets/img/features/1.png" class='w-full' alt="")
+            .flex.flex-col
+              p.features-item-title Гарантия
+              p.features-item-desc Качественное и своевременное выполнение работ
+          .features-item
+            .features-item-wrap
+              img(src="./assets/img/features/2.png" class='w-full' alt="")
+            .flex.flex-col
+              p.features-item-title Сотрудничество
+              p.features-item-desc Работаем с физическими и юридическими лицами
+          .features-item
+            .features-item-wrap
+              img(src="./assets/img/features/3.png" class='w-full' alt="")
+            .flex.flex-col
+              p.features-item-title Опыт
+              p.features-item-desc Использование только сертифицированных и эффективных моющих средств
+          .features-item
+            .features-item-wrap
+              img(src="./assets/img/features/4.png" class='w-full' alt="")
+            .flex.flex-col
+              p.features-item-title Стоимость
+              p.features-item-desc Адекватная, незавышенная стоимость услуг
+          .features-item
+            .features-item-wrap
+              img(src="./assets/img/features/5.png" class='w-full' alt="")
+            .flex.flex-col
+              p.features-item-title География
+              p.features-item-desc Работаем по всей Беларуси
+          .features-item
+            .features-item-wrap
+              img(src="./assets/img/features/6.png" class='w-full' alt="")
+            .flex.flex-col
+              p.features-item-title Безопасность
+              p.features-item-desc Страхование сделок
+
+
+      section#services
+        h2.section-title Услуги
+        .services-wrap 
+          .services-item.services-item-wide
+            .services-item-wrap.services-item-wrap-wide
+              .flex.flex-col
+                p.services-item-title Бытовая генеральная уборка 
+                p.services-item-desc  Разовая комплексная уборка с использованием профессионального оборудования и чистящих средств
+              .services-img-wrap-wide
+                img(src="./assets/img/services/1.png" alt="")
+          .services-item
+            .services-item-wrap
+              p.services-item-title Генеральная уборка после строительства
+              .services-img-wrap
+                img(src="./assets/img/services/2.png" alt="")
+          .services-item
+            .services-item-wrap
+              p.services-item-title Уборка промышленных помещений
+              .services-img-wrap
+                img(src="./assets/img/services/3.png" alt="")
+          .services-item
+            .services-item-wrap
+              p.services-item-title Уборка офисных помещений
+              .services-img-wrap
+                img(src="./assets/img/services/4.png" alt="")
+          .services-item
+            .services-item-wrap
+              p.services-item-title Мойка окон
+              .services-img-wrap
+                img(src="./assets/img/services/5.png" alt="")
+          .services-item.services-item-wide
+            .services-item-wrap.services-item-wrap-wide
+              .flex.flex-col
+                p.services-item-title Уборка жилых помещений
+                p.services-item-desc  Разовая комплексная уборка с использованием профессионального оборудования и чистящих средств
+              .services-img-wrap-wide
+                img(src="./assets/img/services/6.png" alt="")
+          .services-item.order-2
+            .services-item-wrap
+              p.services-item-title Мойка полов и стен
+              .services-img-wrap
+                img(src="./assets/img/services/7.png" alt="")
+          .services-item.services-item-wide
+            .services-item-wrap.services-item-wrap-wide
+              .flex.flex-col
+                p.services-item-title Химчистка ковров
+                p.services-item-desc  Разовая комплексная уборка с использованием профессионального оборудования и чистящих средств
+              .services-img-wrap-wide
+                img(src="./assets/img/services/8.png" alt="")
+          .services-item
+            .services-item-wrap
+              p.services-item-title Уборка после пожара
+              .services-img-wrap
+                img(src="./assets/img/services/9.png" alt="")
+
+
+      section#prices
+        h2.section-title Цены
+        .flex
+          .prices-img-wrap
+            img(src="./assets/img/price.png" alt="")
+          .prices-wrap
+            .prices-title
+              p.bg-white.text-left.font-bold(class="w-1/2") Услуга
+              p.bg-white.text-right.font-bold(class="w-1/2") Цена за м²
+            .prices-item
+              p Уборка жилых помещений
+              p 5-7 BYN
+            .prices-item
+              p Уборка промышленных помещений
+              p 1-1,5 BYN
+            .prices-item
+              p Уборка после ремонта
+              p от 3,5 BYN
+            .prices-item
+              p Мойка окон
+              p 3,5 BYN
+            button.prices-btn-wrap
+              span.prices-btn Скачать прайс 
+                img(src="/assets/img/icons/download.png" alt="")
+
+
+      section#order
+        .order-wrap
+          h3.order-title Заказать уборку
+          p.order-desc  Оставьте заявку и наш специалист <br> проведёт оценку количества работ бесплатно.
+          input.order-input(class="" placeholder="+375 (__) ___ - __ - __") 
+          .order-cbx-wrap
+            input(id="default-checkbox" type="checkbox" value="" class="")
+            label(for="default-checkbox" class="") Я согласен (-на) на обработку моих персональных данных
+          button.order-button Заказать обратный звонок
+            img(src="./assets/img/icons/call.svg" class="" alt="")
+
+
+      section#reviews
+        h2.section-title Отзывы
+        p.reviews-desc Что о нас говорят клиенты
+        .reviews-wrap
+          .reviews-item
+            p.reviews-item-title Очень быстрая и качественная уборка
+            .reviews-item-inner
+              p Уборка дома / 09.09. 2022
+              .reviews-item-stars
+                .reviews-item-stars-inner
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  p.reviews-item-score 5,0
+            p.reviews-item-desc Очень быстрая и качественная уборка Очень быстрая и качественная уборка Очень быстрая и качественная уборка Очень быстрая и качественная уборка
+          .reviews-item
+            p.reviews-item-title Очень быстрая и качественная уборка
+            .reviews-item-inner
+              p Уборка дома / 09.09. 2022
+              .reviews-item-stars
+                .reviews-item-stars-inner
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  p.reviews-item-score 5,0
+            p.reviews-item-desc Очень быстрая и качественная уборка Очень быстрая и качественная уборка Очень быстрая и качественная уборка Очень быстрая и качественная уборка
+          .reviews-item
+            p.reviews-item-title Очень быстрая и качественная уборка
+            .reviews-item-inner
+              p Уборка дома / 09.09. 2022
+              .reviews-item-stars
+                .reviews-item-stars-inner
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  p.reviews-item-score 5,0
+            p.reviews-item-desc Очень быстрая и качественная уборка Очень быстрая и качественная уборка Очень быстрая и качественная уборка Очень быстрая и качественная уборка
+          .reviews-item.reviews-item-wide
+            .flex.flex-col
+              p.reviews-item-title-wide Очень быстрая и качественная уборка
+              .reviews-item-inner
+                p Уборка дома / 09.09. 2022
+                .reviews-item-stars
+                  .reviews-item-stars-inner
+                    img(src="./assets/img/icons/star.svg" alt="" class="")
+                    img(src="./assets/img/icons/star.svg" alt="" class="")
+                    img(src="./assets/img/icons/star.svg" alt="" class="")
+                    img(src="./assets/img/icons/star.svg" alt="" class="")
+                    img(src="./assets/img/icons/star.svg" alt="" class="")
+                    p.reviews-item-score 5,0
+              p.reviews-item-desc-wide Очень быстрая и качественная уборка Очень быстрая и качественная уборка Очень быстрая и качественная уборка Очень быстрая и качественная уборка
+            .reviews-item-img-wrap
+              img(src="./assets/img/review.png" alt="" class="")
+          .reviews-item
+            p.reviews-item-title Очень быстрая и качественная уборка
+            .reviews-item-inner
+              p Уборка дома / 09.09. 2022
+              .reviews-item-stars
+                .reviews-item-stars-inner
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  img(src="./assets/img/icons/star.svg" alt="" class="")
+                  p.reviews-item-score 5,0
+            p.reviews-item-desc Очень быстрая и качественная уборка Очень быстрая и качественная уборка Очень быстрая и качественная уборка Очень быстрая и качественная уборка
+
+
+      section#partners
+        .partners-wrap
+          h2.section-title Наши партнеры
+          .partners-list
+            .flex
+              img(src="./assets/img/partners/1.png" alt="")
+            .flex
+              img(src="./assets/img/partners/2.png" alt="")
+            .flex
+              img(src="./assets/img/partners/3.png" alt="")
+            .flex
+              img(src="./assets/img/partners/4.png" alt="")
+            .flex
+              img(src="./assets/img/partners/5.png" alt="")
+            .flex
+              img(src="./assets/img/partners/6.png" alt="")
+            .flex
+              img(src="./assets/img/partners/7.png" alt="")
+            .flex
+              img(src="./assets/img/partners/8.png" alt="")
+            .flex
+              img(src="./assets/img/partners/9.png" alt="")
+          p.partners-desc Если ваша компания хочет стать партнером и получить бонусы для сотрудников, оставьте ваш номер телефона и наш менеджер свяжется с вами.
+          button.partners-button Стать партнером
+            img(src="./assets/img/icons/arrow.svg" alt="")
+
+
+      section#experts
+        h2.experts-title Специалисты
+        p.experts-desc Все наши клинеры проходят обучение и строгий отбор. Именно по этому с вами работают только профессионалы своего дела.
+        .experts-wrap
+          .experts-item
+            .flex.items-center
+              img(src="./assets/img/team/1.png" class="w-[200px] mx-auto" alt="")
+            p.text-sm.font-bold(class="w-[160px]").mx-auto Наталья Викторовна Волченко 
+            p.text-xs(class="w-[160px]").mx-auto Директор
+            .mx-auto.flex.justify-items-center.items-center.mt-auto
+              img(src="./assets/img/icons/phone.svg" class="w-[30px]" alt="")
+              a.text-sm.pl-1.font-bold(href="") +37529 616 93 73
+          .experts-item
+            .flex.items-center
+              img(src="./assets/img/team/2.png" class="w-[200px] mx-auto" alt="")
+            p.text-sm.font-bold(class="w-[160px]").mx-auto Ольга Викторовна Пятровская
+            p.text-xs(class="w-[160px]").mx-auto Заместитель директора по развитию
+            .mx-auto.flex.justify-items-center.items-center.mt-auto
+              img(src="./assets/img/icons/phone.svg" class="w-[30px]" alt="")
+              a.text-sm.pl-1.font-bold(href="") +37529 757 74 61
+          .experts-item
+            .flex.items-center
+              img(src="./assets/img/team/3.png" class="w-[200px] mx-auto" alt="")
+            p.text-sm.font-bold(class="w-[160px]").mx-auto Иван Александрович Янковский 
+            p.text-xs(class="w-[160px]").mx-auto Мастер производственного отдела
+          .experts-item
+            .flex.items-center
+              img(src="./assets/img/team/4.png" class="w-[200px] mx-auto" alt="")
+            p.text-sm.font-bold(class="w-[160px]").mx-auto Мария
+            p.text-xs(class="w-[160px]").mx-auto Клинер 
+            .flex.justify-items-center.mx-auto.mt-auto.items-center
+              p.text-sm.pr-4 200 уборок
+              .flex.rounded-full.bg-gradient-to-b.from-grLBlue.to-grCyan.p-px
+                .flex.bg-white.rounded-full.py-2.px-4
+                  p.text-sm.pr-1 5,0
+                  img(src="./assets/img/icons/star.svg" class='w-[17px]' alt="")
+          .experts-item
+            .flex.items-center
+              img(src="./assets/img/team/5.png" class="w-[200px] mx-auto" alt="")
+            p.text-sm.font-bold(class="w-[160px]").mx-auto Мария
+            p.text-xs(class="w-[160px]").mx-auto Клинер 
+            .flex.justify-items-center.mx-auto.mt-auto.items-center
+              p.text-sm.pr-4 200 уборок
+              .flex.rounded-full.bg-gradient-to-b.from-grLBlue.to-grCyan.p-px
+                .flex.bg-white.rounded-full.py-2.px-4
+                  p.text-sm.pr-1 5,0
+                  img(src="./assets/img/icons/star.svg" class='w-[17px]' alt="")
+          .experts-item
+            .flex.items-center
+              img(src="./assets/img/team/6.png" class="w-[200px] mx-auto" alt="")
+            p.text-sm.font-bold(class="w-[160px]").mx-auto Мария
+            p.text-xs(class="w-[160px]").mx-auto Клинер 
+            .flex.justify-items-center.mx-auto.mt-auto.items-center
+              p.text-sm.pr-4 200 уборок
+              .flex.rounded-full.bg-gradient-to-b.from-grLBlue.to-grCyan.p-px
+                .flex.bg-white.rounded-full.py-2.px-4
+                  p.text-sm.pr-1 5,0
+                  img(src="./assets/img/icons/star.svg" class='w-[17px]' alt="")
+          .experts-item(class="lg:hidden")
+            .flex.items-center
+              img(src="./assets/img/team/7.png" class="w-[200px] mx-auto" alt="")
+            p.text-sm.font-bold(class="w-[160px]").mx-auto Мария
+            p.text-xs(class="w-[160px]").mx-auto Клинер 
+            .flex.justify-items-center.mx-auto.mt-auto.items-center
+              p.text-sm.pr-4 200 уборок
+              .flex.rounded-full.bg-gradient-to-b.from-grLBlue.to-grCyan.p-px
+                .flex.bg-white.rounded-full.py-2.px-4
+                  p.text-sm.pr-1 5,0
+                  img(src="./assets/img/icons/star.svg" class='w-[17px]' alt="")
+          .experts-item(class="lg:hidden")
+            .flex.items-center
+              img(src="./assets/img/team/8.png" class="w-[200px] mx-auto" alt="")
+            p.text-sm.font-bold(class="w-[160px]").mx-auto Мария
+            p.text-xs(class="w-[160px]").mx-auto Клинер 
+            .flex.justify-items-center.mx-auto.mt-auto.items-center
+              p.text-sm.pr-4 200 уборок
+              .flex.rounded-full.bg-gradient-to-b.from-grLBlue.to-grCyan.p-px
+                .flex.bg-white.rounded-full.py-2.px-4
+                  p.text-sm.pr-1 5,0
+                  img(src="./assets/img/icons/star.svg" class='w-[17px]' alt="")
+
+
+      section#calculator
+        .calculator-gradient
+          .calculator-block
+            h2.calculator-title  Расчитать стоимость уборки
+            p.calculator-subtitle Выберите тип уборки
+            .flex.flex-wrap.justify-center(class="gap-[4%]")
+              .calculator-item
+                img(src="./assets/img/calculator/1.png" alt="")
+                .calculator-name
+                  p.calculator-name-text Разовая (генеральная) уборка
+                  img.calculator-name-img(src="./assets/img/calculator/bullet-fill.svg" class="" alt="")
+
+              .calculator-item
+                img(src="./assets/img/calculator/2.png" alt="")
+                .calculator-name
+                  p.calculator-name-text Поддерживающая уборка
+                  img.calculator-name-img(src="./assets/img/calculator/bullet.svg" class="" alt="")
+
+
+            button.calculator-btn Далее
+        .calculator-block
+          h2.calculator-title  Выберите тип уборки
+          .flex.flex-wrap.justify-center(class="gap-[4%]")
+            .calculator-item
+              img(src="./assets/img/calculator/3.png" alt="")
+              .calculator-name
+                p.calculator-name-text Бытовая (генеральная) уборка
+                img.calculator-name-img(src="./assets/img/calculator/bullet-fill.svg" class="" alt="")
+
+            .calculator-item
+              img(src="./assets/img/calculator/4.png" alt="")
+              .calculator-name
+                p.calculator-name-text После строительства
+                img.calculator-name-img(src="./assets/img/calculator/bullet.svg" class="" alt="")
+          button.calculator-btn Далее
+        h2.calculator-title Выберите дополнительные услуги
+        .calculator-options-wrap
+          .calculator-options-cbx
+            input(id="default-checkbox" type="checkbox" value="" class="hidden")
+            label(for="default-checkbox" class="") Мойка стен
+          .calculator-options-cbx
+            input(id="default-checkbox" type="checkbox" value="" class="hidden")
+            label(for="default-checkbox" class="") Мойка окон
+          .calculator-options-cbx
+            input(id="default-checkbox" type="checkbox" value="" class="hidden")
+            label(for="default-checkbox" class="") Мойка потолочных балок
+          .calculator-options-cbx
+            input(id="default-checkbox" type="checkbox" value="" class="hidden")
+            label(for="default-checkbox" class="") Механиз. мойка пола
+          .calculator-options-cbx
+            input(id="default-checkbox" type="checkbox" value="" class="hidden")
+            label(for="default-checkbox" class="") Мойка пола
+          .calculator-options-cbx
+            input(id="default-checkbox" type="checkbox" value="" class="hidden")
+            label(for="default-checkbox" class="") Химчистка коврового покрытия
+          .calculator-options-cbx
+            input(id="default-checkbox" type="checkbox" value="" class="hidden")
+            label(for="default-checkbox" class="") Химчистка мебели
+        .calculator-options-fields
+          .flex.items-center
+            p.calculator-options-fields-title Площадь уборки
+            .calculator-options-fields-input
+              input(type="text" placeholder="50" class="")
+          .flex.items-center(class="md:w-1/2 sm:w-3/4 xs:w-full")
+            p.calculator-options-fields-title Адрес
+            .calculator-options-fields-textarea
+              textarea(name="" placeholder="г. Минск, ул. Острошицкая, 10,    к-т №3 " class="")
+        .flex.flex-wrap.max-w-screen-xl.w-full.mx-auto.px-4
+          button.calculator-btn Далее
+        .flex.bg-calc.text-white.bg-cover
+          .calculator-block
+            p.calculator-total-title.order-title Предварительная стоимость уборки составит  
+            p.calculator-total-price 102 BYN
+            p.calculator-total-subtitle Для заказа уборки оставьте ваш номер телефона
+            input.order-input( placeholder="+375 (__) ___ - __ - __") 
+            .order-cbx-wrap
+              input(id="default-checkbox" type="checkbox" value="" class="hidden")
+              label(for="default-checkbox" ) Я согласен (-на) на обработку моих персональных данных
+            button.order-button Заказать уборку
+        .calculator-block
+          h2.calculator-title Выберите тип уборки
+          .flex.gap-9.flex-wrap.justify-center(class="lg:justify-start")
+            .calculator-item-3
+              img(src="./assets/img/calculator/5.png" alt="")
+              .calculator-name
+                p.calculator-name-text-3 Уборка жилых помещений
+                img(src="./assets/img/calculator/bullet-fill.svg" class="absolute left-3 t-[50%] w-[30px]" alt="")
+
+            .calculator-item-3
+              img(src="./assets/img/calculator/6.png" alt="")
+              .calculator-name
+                p.calculator-name-text-3 Уборка офисов
+                img(src="./assets/img/calculator/bullet.svg" class="absolute left-3 t-[50%] w-[30px]" alt="")
+
+            .calculator-item-3
+              img(src="./assets/img/calculator/7.png" alt="")
+              .calculator-name
+                p.calculator-name-text-3 Уборка промышленных помещений
+                img(src="./assets/img/calculator/bullet.svg" class="absolute left-3 t-[50%] w-[30px]" alt="")
+          button.calculator-btn Далее
+
+      section#questions
+        h2.questions-title Вопрос-ответ
+        .flex.flex-col
+          .questions-item
+            p Делаете ли вы уборку после ремонта?
+            img(src="./assets/img/icons/plus.svg" alt="")
+          p.questions-answer.hidden 12312312312312312
+        .flex.flex-col
+          .questions-item
+            p У меня раздельный санузел, какое количество мне указывать при оформлении заказа?
+            img(src="./assets/img/icons/plus.svg" alt="")
+          p.questions-answer.hidden 12312312312312312
+        .flex.flex-col
+          .questions-item
+            p Мне нужно, чтобы вы отодвинули мебель, убрали под ней, вернули всё на место. Справитесь?
+            img(src="./assets/img/icons/plus.svg" alt="")
+          p.questions-answer.hidden К сожалению, нет. У нас нет специального оборудования, чтобы передвигать мебель. Без него можно повредить ваше напольное покрытие и спину нашего клинера.
+        .flex.flex-col
+          .questions-item
+            p Нужно ли мне быть дома во время уборки?
+            img(src="./assets/img/icons/plus.svg" alt="")
+          p.questions-answer.hidden 12312312312312312
+        .flex.flex-col
+          .questions-item
+            p Убираете ли вы офисы?
+            img(src="./assets/img/icons/plus.svg" alt="")
+          p.questions-answer.hidden 12312312312312312
+        .flex.flex-col
+          .questions-item
+            p Привозите ли вы свой пылесос?
+            img(src="./assets/img/icons/plus.svg" alt="")
+          p.questions-answer.hidden 12312312312312312
+
+
+      section#order-dark
+        .order-wrap 
+          h3.order-title Остались вопросы? Задайте их нам!
+          p.order-desc Закажите звонок и менеджер ответит на все ваши вопросы.
+          input.order-input( placeholder="+375 (__) ___ - __ - __") 
+          .order-cbx-wrap
+            input(id="default-checkbox" type="checkbox" value="" )
+            label(for="default-checkbox" class="") Я согласен (-на) на обработку моих персональных данных
+
+          button.order-button Заказать обратный звонок
+            img(src="./assets/img/icons/call.svg" class="" alt="")
+
+
+    footer#footer
+      .footer-wrap
+        .footer-col
+          .footer-logo
+            img(src="./assets/img/footer-logo.svg" alt="")
+          ul.footer-list
+            li
+              a(href="") О нас
+            li
+              a(href="") Специалисты
+            li
+              a(href="") Отзывы
+            li.bg-gradient-to-r.from-grLBlue.to-grCyan.pb-px(class="xs:bg-none")
+              .flex.w-full.h-full.bg-black.items-center
+                a(href="") Партнеры
+          .flex.flex-col(class="xs:absolute xs:bottom-48 xs:max-w-[300px]")
+            p.mt-4.h-12.flex.items-center.font-bold ООО "АртРутрейд"
+            p.font-bold УНП 192231375 <br> Свидетельство №192231375 от 12.03.2014 г. зарегистрировано Инспекцией МНС по Первомайскому району г.Минска 
+            p.font-bold.mt-4 г. Минск, ул. Чайлытко, д. 22
+        .footer-col
+          .footer-col-title
+            .flex.h-16.bg-black
+              p.footer-col-title-text Услуги
+          ul.footer-list
+            li
+              a(href="") Услуги
+            li
+              a(href="") Цены
+            li
+              a(href="") Скачать прайс
+            li.bg-gradient-to-r.to-grLBlue.from-grCyan.pb-px.flex-shrink-0.w-64(class="xs:bg-none")
+              .flex.h-full.w-full.bg-black
+          ul.footer-list.mt-4(class="xs:absolute xs:bottom-20 xs:max-w-[300px]")
+            li
+              a.underline(href="") Публичный договор
+            li
+              a.underline(href="") Политика конфиденциальности
+            li
+              a.underline(href="") Условия оказания рекламы
+          .copyright © 2022 CLEANPRO 
+        .footer-col.footer-col-2
+          .footer-col-title
+            .flex.h-16.bg-black 
+              p.footer-col-title-text Контакты
+          .flex.flex-col.mr-auto 
+            ul.footer-list
+              li
+                img(src="./assets/img/footer/phone.svg" alt="" class="h-[40px] w-[40px] md:w-5 md:h-5")
+                p.ml-2 Показать телефон
+              li
+                a(href="") 
+                img(src="./assets/img/social/telegram.svg" alt="" class='h-[40px] w-[40px] md:w-5 md:h-5').mr-2
+                a(href="") 
+                img(src="./assets/img/social/viber.svg" alt="" class='h-[40px] w-[40px] md:w-5 md:h-5')
+
+              li
+                img(src="./assets/img/footer/mail.svg" alt="" class="h-[40px] w-[40px] md:w-5 md:h-5")    
+                a.ml-2 Показать электронную почту
+              li
+                img(src="./assets/img/footer/hours.svg" alt="" class="h-[40px] w-[40px] md:w-5 md:h-5")
+                p.ml-2 Без выходных с 9.00 до 19.00
+          p.mt-auto.font-bold(class="xs:absolute xs:bottom-12") Сайт разработан ВТОП3
   script(src='./assets/js/script.min.js') 

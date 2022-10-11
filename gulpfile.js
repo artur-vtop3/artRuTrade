@@ -14,6 +14,7 @@ const babelTask = require('./gulp/tasks/babel.js')
 function watcher() {
   gulp.watch('src/assets', copy)
   gulp.watch('src/**/*.pug', gulp.series(pugToHtml, postCss))
+  gulp.watch('src/**/*.css', gulp.series(pugToHtml, postCss))
   gulp.watch('src/js/*.js', babelTask)
 }
 
